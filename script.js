@@ -117,15 +117,32 @@ function random(arr) {
 }
 
 function setTheme(condition) {
+    
     document.body.className = "";
 
+    const rain = document.querySelector(".rain");
+    const snow = document.querySelector(".snow");
+
+    rainclassList.remove("active");
+    snow.classList.remove("active");
+
     if (condition.includes("clear")) {
+
         document.body.classList.add("sunny");
+
     } else if (condition.includes("rain")) {
+
         document.body.classList.add("rainy");
+        rain.classList.add("active");
+
     } else if (condition.includes("snow")) {
+
         document.body.classList.add("snowy");
+        snow.classList.add("active");
+
     } else {
+
         document.body.classList.add("cloudy");
+        
     }
 }
