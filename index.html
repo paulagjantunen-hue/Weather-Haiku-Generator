@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather Haiku Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contaner">
+        <h1>Weather Haiku Generator</h1>
+
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Enter a city">
+            <button id="generateBtn">Generate Haiku</button>
+        </div>
+
+        <div class="weather-card">
+            <h2 id="location">---</h2>
+            <p id="weather">Loading...</p>
+
+            <div class="haiku-box">
+                <p id="haiku"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
